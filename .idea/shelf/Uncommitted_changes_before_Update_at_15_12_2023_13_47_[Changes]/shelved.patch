@@ -1,0 +1,10 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	(revision a6cce8604c72755c2083d1e880d41be1c7f7d1dd)
++++ b/main.py	(date 1702643628892)
+@@ -1,0 +1,1 @@
++from STP import *
