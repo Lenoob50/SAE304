@@ -2,4 +2,4 @@ https://github.com/davidbombal/scapy/blob/main/spanning-tree-root-attack.py
 https://stackoverflow.com/questions/28005755/sending-hand-crafted-bpdu-spanning-tree-protocol-packet-with-python
 https://securiumsolutions.com/spanning-tree-protocol/
 https://standards.ieee.org/products-programs/regauth/grpmac/public/
-
+https://scapy.readthedocs.io/en/latest/usage.html
