@@ -22,5 +22,4 @@ frame_discover_l5 = DHCP(options=[("message-type","discover"), ("end")])
 frame_discover = frame_discover_l1 / frame_discover_l2 / frame_discover_l3 / frame_discover_l4 / frame_discover_l5
 #Envoie du segment grâce à la fonction "sendp", le DHCP fonctionnant sur la couche L2 du modèle OSI
 #Envoie du paquet à l'intérieur d'une boucle "loop=1" afin d'effectuer plusieurs interrogations demandant les adresses IP
-for i in range (0, 10000):
-    sendp(frame_discover, iface="enxa0cec8f3e4df",loop=0,verbose=1 )
+sendp(frame_discover, iface="eth0",loop=1,verbose=1 )
