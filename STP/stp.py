@@ -25,4 +25,4 @@ for i in range (0, 10000):
     #La commande "verbose=1" indique d'afficher des informations détaillées lors l'envoi.
     sendp(frame[0], loop=0, verbose=1)
     #Permet d'attendre 1 seconde avant de ré-envoyer la trame
-    time.sleep(1)
+    #time.sleep(1)
