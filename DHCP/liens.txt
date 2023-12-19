@@ -1,1 +1,2 @@
+https://community.fs.com/fr/article/what-is-dhcp-snooping-and-how-it-works.html
 https://kavigihan.medium.com/dhcp-starvation-attack-using-python-ab2f49c2d558
