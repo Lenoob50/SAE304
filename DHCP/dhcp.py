@@ -18,5 +18,5 @@ frame_discover = frame_discover_l1 / frame_discover_l2 / frame_discover_l3 / fra
 #Envoie du segment grâce à la fonction "sendp", le DHCP fonctionnant sur la couche L2 du modèle OSI
 #Envoie du paquet à l'intérieur d'une boucle "loop=1" afin d'effectuer plusieurs interrogations demandant les adresses IP
 sendp(frame_discover, iface="eth0",loop=1,verbose=1 )
-sleep(0.4)
-    print(f"Sending packet - {ip_add}")
+
+
