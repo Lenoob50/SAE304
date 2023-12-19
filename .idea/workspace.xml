@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5609b7de-5c1e-4b9c-8e65-6eccdc08eae1" name="Changes" comment="Modifiy DHCP attack 11:38-19/12">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DHCP/dhcp.py" beforeDir="false" afterPath="$PROJECT_DIR$/DHCP/dhcp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
