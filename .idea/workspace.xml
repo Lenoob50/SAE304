@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5609b7de-5c1e-4b9c-8e65-6eccdc08eae1" name="Changes" comment="Modifiy DHCP attack 11:38-19/12">
+    <list default="true" id="5609b7de-5c1e-4b9c-8e65-6eccdc08eae1" name="Changes" comment="Remove .gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DHCP/dhcp.py" beforeDir="false" afterPath="$PROJECT_DIR$/DHCP/dhcp.py" afterDir="false" />
     </list>
@@ -56,6 +56,30 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="dhcp" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SAE304" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DHCP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DHCP/dhcp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -112,39 +136,31 @@
       <option name="project" value="LOCAL" />
       <updated>1702646742522</updated>
     </task>
-    <task id="LOCAL-00006" summary="Modify STP attack">
+    <task id="LOCAL-00006" summary="Remove .gitignore">
       <option name="closed" value="true" />
-      <created>1702981212384</created>
+      <created>1702648920559</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1702981212384</updated>
+      <updated>1702648920559</updated>
     </task>
-    <task id="LOCAL-00007" summary="Modifiy DHCP attack 11:38-19/12">
+    <task id="LOCAL-00007" summary="Remove .gitignore">
       <option name="closed" value="true" />
-      <created>1702982341465</created>
+      <created>1702971495221</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1702982341465</updated>
+      <updated>1702971495221</updated>
     </task>
-    <task id="LOCAL-00008" summary="Modifiy DHCP attack 11:38-19/12">
+    <task id="LOCAL-00008" summary="Remove .gitignore">
       <option name="closed" value="true" />
-      <created>1702982355143</created>
+      <created>1702971928438</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1702982355143</updated>
+      <updated>1702971928438</updated>
     </task>
-    <task id="LOCAL-00009" summary="Modifiy DHCP attack 11:38-19/12">
-      <option name="closed" value="true" />
-      <created>1702982416102</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1702982416102</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -152,10 +168,8 @@
     <MESSAGE value="Print hello worl in stp.py for test" />
     <MESSAGE value="Not import scapy in Main" />
     <MESSAGE value="Add .gitignore to project" />
+    <MESSAGE value="ajout de l'attaque stp" />
     <MESSAGE value="Remove .gitignore" />
-    <MESSAGE value="Modify STP attack" />
-    <MESSAGE value="Modifiy DHCP attack 11:38-19/12" />
-    <MESSAGE value="Modifiy DHCP attack 11:50-19/12" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifiy DHCP attack 11:50-19/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove .gitignore" />
   </component>
 </project>
