@@ -24,5 +24,5 @@ frame_discover = frame_discover_l1 / frame_discover_l2 / frame_discover_l3 / fra
 
 for i in range (0, 10000):
     sendp(frame_discover, iface="eth0",loop=1,verbose=1 )
-    time.sleep(0.4)
-#print(f"Sending packet - {ip_add}")
+    time.sleep(0.5)
+
