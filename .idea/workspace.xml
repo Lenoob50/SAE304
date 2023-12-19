@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5609b7de-5c1e-4b9c-8e65-6eccdc08eae1" name="Changes" comment="Modify STP attack">
-      <change beforePath="$PROJECT_DIR$/.idea/SAE304.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SAE304.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5609b7de-5c1e-4b9c-8e65-6eccdc08eae1" name="Changes" comment="Modify DHCP Attack 11:33-19/12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DHCP/dhcp.py" beforeDir="false" afterPath="$PROJECT_DIR$/DHCP/dhcp.py" afterDir="false" />
     </list>
@@ -122,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702981212384</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Modify DHCP Attack 11:33-19/12">
+      <option name="closed" value="true" />
+      <created>1702982032102</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702982032102</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -132,6 +138,7 @@
     <MESSAGE value="Add .gitignore to project" />
     <MESSAGE value="Remove .gitignore" />
     <MESSAGE value="Modify STP attack" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify STP attack" />
+    <MESSAGE value="Modify DHCP Attack 11:33-19/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify DHCP Attack 11:33-19/12" />
   </component>
 </project>
