@@ -1,1 +1,4 @@
-
+https://github.com/t4d/HSRPwn/blob/master/HSRPwn.py
+https://github.com/t4d/HSRPwn
+https://www.frameip.com/hsrp-cisco-securite/#:~:text=HSRP%20est%20le%20protocole%20propriétaire,les%20équipements%20du%20réseau%20LAN.
+https://andrewroderos.com/attacking-hsrp/
