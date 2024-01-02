@@ -1,0 +1,2 @@
+https://www.fingerinthenet.com/vtp/#:~:text=Le%20protocole%20VTP%20a%20pour,de%20VLAN%20de%20manière%20centralisée.
+https://www.cisco.com/c/fr_ca/support/docs/lan-switching/vtp/10558-21.html#:~:text=Le%20Serveur%20VTP%20est%20le,ne%20participent%20pas%20à%20VTP.
