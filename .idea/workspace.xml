@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5609b7de-5c1e-4b9c-8e65-6eccdc08eae1" name="Changes" comment="Modifiy DHCP attack 11:38-19/12">
-      <change afterPath="$PROJECT_DIR$/DHCP/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SAE304.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SAE304.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5609b7de-5c1e-4b9c-8e65-6eccdc08eae1" name="Changes" comment="Attaque DHCP TERMINEE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DHCP/dhcp.py" beforeDir="false" afterPath="$PROJECT_DIR$/DHCP/dhcp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STP/stp.py" beforeDir="false" afterPath="$PROJECT_DIR$/STP/stp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,19 +45,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Python.dhcp.executor": "Run",
-    "Python.scapy-test.executor": "Run",
-    "Python.stp.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python.dhcp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scapy-test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.stp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -150,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702982416102</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Attaque DHCP TERMINEE">
+      <option name="closed" value="true" />
+      <created>1704816059582</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704816059582</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -162,6 +166,7 @@
     <MESSAGE value="Modify STP attack" />
     <MESSAGE value="Modifiy DHCP attack 11:38-19/12" />
     <MESSAGE value="Modifiy DHCP attack 11:50-19/12" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifiy DHCP attack 11:50-19/12" />
+    <MESSAGE value="Attaque DHCP TERMINEE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Attaque DHCP TERMINEE" />
   </component>
 </project>
