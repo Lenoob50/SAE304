@@ -3,3 +3,9 @@ https://book.hacktricks.xyz/welcome/readme
 https://www.kali.org/tools/yersinia/
 RFC:https://datatracker.ietf.org/doc/
 pip3 install scapy
+---
+recherche scapy :
+http://sdz.tdct.org/sdz/manipulez-les-paquets-reseau-avec-scapy.html
+https://connect.ed-diamond.com/GNU-Linux-Magazine/glmfhs-090/scapy-le-couteau-suisse-python-pour-le-reseau
+https://datascientest.com/scapy-tout-savoir
+
