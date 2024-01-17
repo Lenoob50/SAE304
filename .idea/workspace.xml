@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5609b7de-5c1e-4b9c-8e65-6eccdc08eae1" name="Changes" comment="Attaque DHCP TERMINEE">
-      <change afterPath="$PROJECT_DIR$/image.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SAE304.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SAE304.iml" afterDir="false" />
+    <list default="true" id="5609b7de-5c1e-4b9c-8e65-6eccdc08eae1" name="Changes" comment="Remove .gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DHCP/dhcp.py" beforeDir="false" afterPath="$PROJECT_DIR$/DHCP/dhcp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/no-gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/no-gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,25 +47,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Python.dhcp.executor": "Run",
-    "Python.gui.executor": "Run",
-    "Python.scapy-test.executor": "Run",
-    "Python.stp.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/onedr/PycharmProjects/SAE304",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python.scapy-test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.stp.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\onedr\PycharmProjects\SAE304" />
-    </key>
+}</component>
+  <component name="RunManager">
+    <configuration name="dhcp" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SAE304" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DHCP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DHCP/dhcp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -124,63 +138,55 @@
       <option name="project" value="LOCAL" />
       <updated>1702646742522</updated>
     </task>
-    <task id="LOCAL-00006" summary="Modify STP attack">
+    <task id="LOCAL-00006" summary="Remove .gitignore">
       <option name="closed" value="true" />
-      <created>1702981212384</created>
+      <created>1702648920559</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1702981212384</updated>
+      <updated>1702648920559</updated>
     </task>
-    <task id="LOCAL-00007" summary="Modifiy DHCP attack 11:38-19/12">
+    <task id="LOCAL-00007" summary="Remove .gitignore">
       <option name="closed" value="true" />
-      <created>1702982341465</created>
+      <created>1702971495221</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1702982341465</updated>
+      <updated>1702971495221</updated>
     </task>
-    <task id="LOCAL-00008" summary="Modifiy DHCP attack 11:38-19/12">
+    <task id="LOCAL-00008" summary="Remove .gitignore">
       <option name="closed" value="true" />
-      <created>1702982355143</created>
+      <created>1702971928438</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1702982355143</updated>
+      <updated>1702971928438</updated>
     </task>
-    <task id="LOCAL-00009" summary="Modifiy DHCP attack 11:38-19/12">
+    <task id="LOCAL-00009" summary="Remove .gitignore">
       <option name="closed" value="true" />
-      <created>1702982416102</created>
+      <created>1704221558193</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1702982416102</updated>
+      <updated>1704221558193</updated>
     </task>
-    <task id="LOCAL-00010" summary="Attaque DHCP TERMINEE">
+    <task id="LOCAL-00010" summary="Remove .gitignore">
       <option name="closed" value="true" />
-      <created>1704816059582</created>
+      <created>1704221805670</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1704816059582</updated>
+      <updated>1704221805670</updated>
     </task>
-    <task id="LOCAL-00011" summary="Attaque DHCP TERMINEE">
+    <task id="LOCAL-00011" summary="Remove .gitignore">
       <option name="closed" value="true" />
-      <created>1704816087163</created>
+      <created>1705244781863</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1704816087163</updated>
+      <updated>1705244781863</updated>
     </task>
-    <task id="LOCAL-00012" summary="Attaque DHCP TERMINEE">
-      <option name="closed" value="true" />
-      <created>1705059601559</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1705059601559</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,11 +205,8 @@
     <MESSAGE value="Print hello worl in stp.py for test" />
     <MESSAGE value="Not import scapy in Main" />
     <MESSAGE value="Add .gitignore to project" />
+    <MESSAGE value="ajout de l'attaque stp" />
     <MESSAGE value="Remove .gitignore" />
-    <MESSAGE value="Modify STP attack" />
-    <MESSAGE value="Modifiy DHCP attack 11:38-19/12" />
-    <MESSAGE value="Modifiy DHCP attack 11:50-19/12" />
-    <MESSAGE value="Attaque DHCP TERMINEE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attaque DHCP TERMINEE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove .gitignore" />
   </component>
 </project>
