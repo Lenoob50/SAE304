@@ -1,8 +1,8 @@
 import argparse
-
+import gui
 def launch(args):
     if(args!=None):
-        pass
+        gui()
     else:
         pass
 def arguments():
