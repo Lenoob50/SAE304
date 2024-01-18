@@ -25,7 +25,7 @@ def dhcp_window():
         for i in inet_list.curselection():
             int_use=inet_list.get(i)
         return int_use
-    progressbar = ttk.Progressbar(orient=HORIZONTAL,length=400)
+    progressbar = ttk.Progressbar(dhcp_win,orient=HORIZONTAL,length=400)
     progressbar.place(x=150, y=150)
     def launch():
         dhcp(selected_int(),dhcp_win,progressbar)
@@ -39,16 +39,18 @@ def dhcp_window():
     refresh.place(x=550,y=50)
     dhcp_win.mainloop()
 
+def stp_window():
+    stp_win = Tk()
+    stp_win.title
 
-dhcp_window()
 def gui():
     main = Tk()
     main.title("RT2@hacker")
-    main.geometry("800x400")
+    main.geometry("450x250")
     main.resizable(False, False)
     bienvenue = Label(main, text="Bienvenue, quelle attaque voulez-vous utiliser ?")
     bienvenue.place(x=80, y=10)
-    button = Button(main, text="DHCP", width=10)
+    button = Button(main, text="DHCP", width=10,command=dhcp_window)
     button.place(x=85, y=75)
     button = Button(main, text="STP", width=10)
     button.place(x=85, y=125)
@@ -60,9 +62,8 @@ def gui():
     button.place(x=150, y=175)
     main.mainloop()
 
+gui()
 
 
-def stp_window():
-    pass
 
 
