@@ -1,10 +1,18 @@
 #!/usr/bin/python3
 import DHCP.dhcp
-import STP.STP_opé
+import STP.stp
 
-print("1->attaque_dhcp\n2->attaque_stp\n")
+print("Numéro 1 -> Attaque DHCP Starvation\nNuméro 2 -> Attaque STP\n\nNuméro 3 -> Informations supplémentaires")
 
-id = input("Saisir le numéro correspondant à l'attaque")
+id = int(input("Saisir le numéro correspondant à l'attaque :\n"))
 
 if id==1:
-    DHCP.dhcp()
+    print("Vous lancez l'attaque DHCP Starvation !")
+    '''DHCP.dhcp_no_gui("eno1")'''
+if id==2:
+    print("Vous lancez l'attaque STP !")
+    '''STP.stp()'''
+if id==3:
+    print("Voici les informations")
+else:
+    print("Cette action est impossible")

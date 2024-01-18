@@ -6,7 +6,7 @@ from scapy.layers.dhcp import BOOTP, DHCP
 from scapy.layers.inet import IP, UDP
 from scapy.layers.l2 import Ether
 
-
+# Fonction de l'attaque DHCP pour l'interface GUI
 def dhcp(interface,win,pg):
     # Construction d'un paquet DHCP_DISCOVER à envoyer
     # Construction de la couche L1 Ethernet avec une adresse MAC de destination de multidiffusion et une adresse MAC source aléatoire avec la fonction "RandMAC" afin d'empêcher le serveur DHCP de déterminer l'expéditeur
@@ -59,7 +59,7 @@ def dhcp(interface,win,pg):
         sendp(frame_discover, iface=interface, loop=0, verbose=0)
         time.sleep(0.4)
 
-
+# Fonction de l'attaque DHCP pour l'interface CLI
 def dhcp_no_gui(interface):
     # Construction d'un paquet DHCP_DISCOVER à envoyer
     # Construction de la couche L1 Ethernet avec une adresse MAC de destination de multidiffusion et une adresse MAC source aléatoire avec la fonction "RandMAC" afin d'empêcher le serveur DHCP de déterminer l'expéditeur
