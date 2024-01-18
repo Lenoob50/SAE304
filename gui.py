@@ -3,10 +3,15 @@ from tkinter import messagebox
 from tkinter import ttk
 from scapy.all import *
 from DHCP.dhcp import dhcp
+from STP.stp import stp
 
 def nyi():
-    msg = messagebox.showinfo("Erreur dans la matrice", "Pas ecnore implémenté\n Revenez plus tard ;)")
+    msg = messagebox.showinfo("Erreur dans la matrice", "Pas encore implémenté\n Revenez plus tard ;)")
 
+def infos():
+    msg = messagebox.showinfo("Informations", "\nCode source et script réalisés dans le cadre de la SAE 304-Cyber\n"
+                                              "Les étudiants en charge de ce projet sont DOREY Grégoire et CHARLES Clémence\n"
+                                              "BUT 2A - IUT de Caen Normandie\n")
 
 def dhcp_window():
     dhcp_win = Tk()
@@ -58,7 +63,7 @@ def gui():
     button.place(x=225, y=75)
     button = Button(main, text="NYI", width=10, command=nyi)
     button.place(x=225, y=125)
-    button = Button(main, text="INFOS", width=10)
+    button = Button(main, text="INFOS", width=10, command=infos)
     button.place(x=150, y=175)
     main.mainloop()
 
