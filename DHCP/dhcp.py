@@ -33,6 +33,12 @@ def dhcp(interface,win,pg):
             ip_str = (ip_str + liste[i])
     # À chaque tour de boucle nous ajoutons "1" au dernier octet de l'IP puis nous reconstruisons l'IP avec les "." à partir de la liste
     for j in range(0, 256):
+        if(liste[0]=="0"):
+            print("L'adresse utiliser n'est pas disponible")
+            return
+        elif(liste[0]=="127"):
+            print("L'adresse utiliser n'est pas disponible")
+            return
         liste = ip.split(".")
         liste.pop(3)
         str_vide = ""
