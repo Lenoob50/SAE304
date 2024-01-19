@@ -5,6 +5,7 @@ from scapy.all import *
 from scapy.layers.dhcp import BOOTP, DHCP
 from scapy.layers.inet import IP, UDP
 from scapy.layers.l2 import Ether
+import utils
 
 # Fonction de l'attaque DHCP pour l'interface GUI
 def dhcp(interface,win,pg):
@@ -92,6 +93,7 @@ def dhcp_no_gui(interface):
         elif(liste[0]=="127"):
             print("L'adresse utiliser n'est pas disponible")
             return
+        utils.pg()
         liste = ip.split(".")
         liste.pop(3)
         str_vide = ""
