@@ -11,7 +11,7 @@ def nyi():
 def infos():
     msg = messagebox.showinfo("Informations", "\nCode source et script réalisés dans le cadre de la SAE 304-Cyber\n"
                                               "Les étudiants en charge de ce projet sont DOREY Grégoire et CHARLES Clémence\n"
-                                              "BUT 2A - IUT de Caen Normandie\n")
+                                              "BUT 2A - IUT de Caen Normandie\n",)
 
 def dhcp_window():
     dhcp_win = Tk()

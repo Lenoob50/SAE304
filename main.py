@@ -6,6 +6,8 @@ def launch(args):
         gui.gui()
     elif(args=="CLI"):
         no_gui.no_gui()
+    else:
+        raise AttributeError("Merci de préciser un argument valide -c {GUI/CLI} ")
 
 def arguments():
     parser = argparse.ArgumentParser(description="SAE 304 - Découvrir le pentesting")
