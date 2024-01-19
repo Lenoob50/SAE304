@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5609b7de-5c1e-4b9c-8e65-6eccdc08eae1" name="Changes" comment="plein de nouveaux trucs !">
-      <change beforePath="$PROJECT_DIR$/.idea/SAE304.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SAE304.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5609b7de-5c1e-4b9c-8e65-6eccdc08eae1" name="Changes" comment="Add arguments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DHCP/dhcp.py" beforeDir="false" afterPath="$PROJECT_DIR$/DHCP/dhcp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/no-gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/no_gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705611246682</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add arguments">
+      <option name="closed" value="true" />
+      <created>1705687880535</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1705687880535</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,6 +253,7 @@
     <MESSAGE value="Fenetre DHCP en cours de creation" />
     <MESSAGE value="Fenetre DHCP fonctionelle" />
     <MESSAGE value="plein de nouveaux trucs !" />
-    <option name="LAST_COMMIT_MESSAGE" value="plein de nouveaux trucs !" />
+    <MESSAGE value="Add arguments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add arguments" />
   </component>
 </project>

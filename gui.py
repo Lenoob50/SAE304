@@ -67,7 +67,6 @@ def gui():
     button.place(x=150, y=175)
     main.mainloop()
 
-gui()
 
 
 
