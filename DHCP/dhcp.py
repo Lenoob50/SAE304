@@ -5,6 +5,8 @@ from scapy.all import *
 from scapy.layers.dhcp import BOOTP, DHCP
 from scapy.layers.inet import IP, UDP
 from scapy.layers.l2 import Ether
+from tqdm import tqdm
+
 import utils
 
 # Fonction de l'attaque DHCP pour l'interface GUI
@@ -86,6 +88,8 @@ def dhcp_no_gui(interface):
         else:
             ip_str = (ip_str + liste[i])
     # À chaque tour de boucle nous ajoutons "1" au dernier octet de l'IP puis nous reconstruisons l'IP avec les "." à partir de la liste
+    for i in tqdm(range(0, 100), desc="Progression"):
+        time.sleep(.1)
     for j in range(0, 256):
         if(liste[0]=="0"):
             print("L'adresse utiliser n'est pas disponible")
@@ -93,7 +97,6 @@ def dhcp_no_gui(interface):
         elif(liste[0]=="127"):
             print("L'adresse utiliser n'est pas disponible")
             return
-        utils.pg()
         liste = ip.split(".")
         liste.pop(3)
         str_vide = ""
@@ -110,4 +113,5 @@ def dhcp_no_gui(interface):
         # Envoie du segment grâce à la fonction "sendp", le DHCP fonctionnant sur la couche L2 du modèle OSI
         # Envoie du paquet à l'intérieur d'une boucle "loop=1" afin d'effectuer plusieurs interrogations demandant les adresses IP
         sendp(frame_discover, iface=interface, loop=0, verbose=0)
+
         time.sleep(0.4)
