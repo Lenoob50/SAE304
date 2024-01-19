@@ -40,7 +40,7 @@ def dhcp_window():
     button.place(x=20, y=200)
     ip_display = Label(dhcp_win,text=get_if_addr(selected_int()),font=("Courier", 22))
     ip_display.place(x=250,y=50)
-    refresh = Button(dhcp_win,text="Rafraichir l'ip",command=update_ip)
+    refresh = Button(dhcp_win,text="Rafraichir l'IP",command=update_ip)
     refresh.place(x=550,y=50)
     dhcp_win.mainloop()
 
