@@ -33,7 +33,5 @@ elif id==3:
 else:
     print("\nCette action est impossible, veuillez réitérer le script afin de donner un numéro entre 1 et 3 !\n")
 
-color_bars = [Fore.BLUE]
-
 for i in tqdm(range(0, 100), desc ="Progression"):
     sleep(.1)
