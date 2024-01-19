@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5609b7de-5c1e-4b9c-8e65-6eccdc08eae1" name="Changes" comment="plein de nouveaux trucs !">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5609b7de-5c1e-4b9c-8e65-6eccdc08eae1" name="Changes" comment="essai">
+      <change beforePath="$PROJECT_DIR$/no-gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/no-gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,21 +49,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Python.dhcp.executor": "Run",
-    "Python.gui.executor": "Run",
-    "Python.no-gui.executor": "Run",
-    "Python.scapy-test.executor": "Run",
-    "Python.stp.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python.dhcp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gui.executor&quot;: &quot;Run&quot;,
+    &quot;Python.no-gui.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scapy-test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.stp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -216,7 +216,31 @@
       <option name="project" value="LOCAL" />
       <updated>1705611246682</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="plein de nouveaux trucs !">
+      <option name="closed" value="true" />
+      <created>1705686821454</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1705686821455</updated>
+    </task>
+    <task id="LOCAL-00019" summary="plein de nouveaux trucs !">
+      <option name="closed" value="true" />
+      <created>1705686885209</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1705686885209</updated>
+    </task>
+    <task id="LOCAL-00020" summary="essai">
+      <option name="closed" value="true" />
+      <created>1705686901650</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1705686901650</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,6 +267,7 @@
     <MESSAGE value="Fenetre DHCP en cours de creation" />
     <MESSAGE value="Fenetre DHCP fonctionelle" />
     <MESSAGE value="plein de nouveaux trucs !" />
-    <option name="LAST_COMMIT_MESSAGE" value="plein de nouveaux trucs !" />
+    <MESSAGE value="essai" />
+    <option name="LAST_COMMIT_MESSAGE" value="essai" />
   </component>
 </project>

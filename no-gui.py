@@ -32,14 +32,8 @@ elif id==3:
           "BUT 2A - IUT de Caen Normandie\n")
 else:
     print("\nCette action est impossible, veuillez réitérer le script afin de donner un numéro entre 1 et 3 !\n")
-'''
+
 color_bars = [Fore.BLUE]
 
 for i in tqdm(range(0, 100), desc ="Progression"):
-    for color in color_bars:
-        for i in trange(int(1e2),
-                        bar_format="{l_bar}%s{bar}%s{r_bar}" % (color, Fore.RESET)):
-            pass
     sleep(.1)
-'''
-
