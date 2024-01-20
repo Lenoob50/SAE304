@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-import DHCP.dhcp
-import STP.stp
-
-# Importation de la bibliothèque TQDM afin d'avoir la barre de progression dans le terminal
-from tqdm import tqdm
-from time import sleep
+import utils
 
 def no_gui():
+    '''Cette fonction lance les attaques de manière non graphique'''
+    #Affichage du titre
     print("  _____ _______ ___         _    _          _____ _  ________ _____ ")
     print(" |  __ \__   __|__ \  ____ | |  | |   /\   / ____| |/ /  ____|  __ \ ")
     print(" | |__) | | |     ) |/ __ \| |__| |  /  \ | |    | ' /| |__  | |__) |")
@@ -16,15 +13,16 @@ def no_gui():
     print("                     \____/                                          ")
 
     print("\nNuméro 1 -> Attaque DHCP Starvation\nNuméro 2 -> Attaque STP\nNuméro 3 -> Informations supplémentaires\n")
-
+    # Récuperation grace à un input du type d'attque que l'utilsateur veut lancer
     id = int(input("Saisir le numéro correspondant à l'attaque :\n\n"))
-
+    #Lancement des attaques en fonction du numéro choisi
     if id == 1:
         print("\nVous lancez l'attaque DHCP Starvation !\n")
-        DHCP.dhcp.dhcp_no_gui("docker0")
+        utils.select_int("DHCP")
+
     elif id == 2:
         print("\nVous lancez l'attaque STP !\n")
-        '''STP.stp()'''
+        utils.select_int("STP")
     elif id == 3:
         print("\nCode source et script réalisés dans le cadre de la SAE 304-Cyber\n"
               "Les étudiants en charge de ce projet sont DOREY Grégoire et CHARLES Clémence\n"
