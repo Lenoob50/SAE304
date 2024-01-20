@@ -3,7 +3,8 @@ import argparse
 import gui
 import no_gui
 def launch(args):
-    '''Cette fonction permet de determiner quel argument à été lancé lors de l'appel du script'''
+    '''Cette fonction permet de determiner quel argument à été lancé lors de l'appel du script
+    args->str'''
     if(args=="GUI"):
         gui.gui() #Lancement du programme en manière graphique en utilisant la fonction gui()
     elif(args=="CLI"):

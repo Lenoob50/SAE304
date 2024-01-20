@@ -13,9 +13,9 @@ import utils
 # Fonction de l'attaque DHCP pour l'interface GUI
 def dhcp(interface,win,pg):
     '''Cette fonction nous permet de lancer une attaque de type DHCP Starvation
-    interface -->str
-    win-->Tk
-    pg--> progressbar'''
+    interface ->str
+    win->Tk
+    pg-> progressbar'''
     # Construction d'un paquet DHCP_DISCOVER à envoyer
     # Construction de la couche L1 Ethernet avec une adresse MAC de destination de multidiffusion et une adresse MAC source aléatoire avec la fonction "RandMAC" afin d'empêcher le serveur DHCP de déterminer l'expéditeur
     frame_discover_l1 = Ether(dst="ff:ff:ff:ff:ff:ff", src=RandMAC(), type=0x0800)

@@ -3,7 +3,8 @@
 from scapy.all import *
 
 def stp(interface):
-    '''Cette fonction nous permet de lancer une attaque pour devenir port root sur un switch proposant du STP 802.1D'''
+    '''Cette fonction nous permet de lancer une attaque pour devenir port root sur un switch proposant du STP 802.1D
+    interface -> str'''
     # Utilisation de la fonction "sniff" pour capturer une trame STP avec une adresse de destination de multidiffusion (01:80:c2:00:00:00)
     trame = sniff(filter="ether dst 01:80:c2:00:00:00", count=1, iface=interface)
     trame.show()

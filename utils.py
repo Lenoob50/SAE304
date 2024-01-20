@@ -2,7 +2,8 @@ from scapy.all import *
 import DHCP
 import STP
 def select_int(attaque):
-    '''Cette fonction permet de choisir quel interface on va utiliser lors de l'attaque'''
+    '''Cette fonction permet de choisir quel interface on va utiliser lors de l'attaque
+    attaque ->str'''
     iface_list = get_if_list()#recuperation des interface du pc
     for i in range(len(iface_list)):
         print(str(i+1)+" - "+iface_list[i])#Affichage des interfaces

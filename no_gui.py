@@ -11,7 +11,7 @@ def no_gui():
     print(" | | \ \  | |   / /| | (_| | |  | |/ ____ \ |____| . \| |____| | \ \ ")
     print(" |_|  \_\ |_|  |____\ \__,_|_|  |_/_/    \_\_____|_|\_\______|_|  \_\ ")
     print("                     \____/                                          ")
-
+    #Affichage des options
     print("\nNuméro 1 -> Attaque DHCP Starvation\nNuméro 2 -> Attaque STP\nNuméro 3 -> Informations supplémentaires\n")
     # Récuperation grace à un input du type d'attque que l'utilsateur veut lancer
     id = int(input("Saisir le numéro correspondant à l'attaque :\n\n"))

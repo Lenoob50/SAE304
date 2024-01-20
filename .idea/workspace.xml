@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5609b7de-5c1e-4b9c-8e65-6eccdc08eae1" name="Changes" comment="Change Arguments Type">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5609b7de-5c1e-4b9c-8e65-6eccdc08eae1" name="Changes" comment="Review 20/01/2024 15h06">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DHCP/dhcp.py" beforeDir="false" afterPath="$PROJECT_DIR$/DHCP/dhcp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/STP/stp.py" beforeDir="false" afterPath="$PROJECT_DIR$/STP/stp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VTP/liens.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VTP/vtp.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/no_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/no_gui.py" afterDir="false" />
@@ -244,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705688440038</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Review 20/01/2024 15h06">
+      <option name="closed" value="true" />
+      <created>1705759585065</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1705759585065</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,6 +278,7 @@
     <MESSAGE value="plein de nouveaux trucs !" />
     <MESSAGE value="Add arguments" />
     <MESSAGE value="Change Arguments Type" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change Arguments Type" />
+    <MESSAGE value="Review 20/01/2024 15h06" />
+    <option name="LAST_COMMIT_MESSAGE" value="Review 20/01/2024 15h06" />
   </component>
 </project>

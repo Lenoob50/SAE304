@@ -137,13 +137,21 @@ def gui():
     button = Button(main, text="DHCP", width=10,command=dhcp_window)
     #Placement du boutton
     button.place(x=85, y=75)
+    # Ajout d'un boutton
     button = Button(main, text="STP", width=10,command=stp_window)
+    # Placement du boutton
     button.place(x=85, y=125)
+    # Ajout d'un boutton
     button = Button(main, text="NYI", width=10, command=nyi)
+    # Placement du boutton
     button.place(x=225, y=75)
+    # Ajout d'un boutton
     button = Button(main, text="NYI", width=10, command=nyi)
+    # Placement du boutton
     button.place(x=225, y=125)
+    # Ajout d'un boutton
     button = Button(main, text="INFOS", width=10, command=infos)
+    # Placement du boutton
     button.place(x=150, y=175)
     #Lancement de la fenetre
     main.mainloop()
